@@ -6,10 +6,9 @@ const { NaveEspacial } = require("./NaveEspacial");
     
  
     constructor(nombre, peso, combustible, potencia, tipoNave, tipoPropulsion) {
+      super(nombre, peso, combustible, potencia, tipoNave);
+       this.tipoPropulsion = tipoPropulsion;          
        
-       this.tipoPropulsion = tipoPropulsion;      
-     
-       super(nombre, peso, combustible, potencia, tipoNave);
  
  
    }
